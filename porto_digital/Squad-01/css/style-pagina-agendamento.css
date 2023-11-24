@@ -1,0 +1,112 @@
+body {
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+
+  .calendar {
+    width: 600px;
+    margin-left: 100px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+  }
+
+  h1 {
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .menu {
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  .menu a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .menu a:hover {
+    text-decoration: underline;
+  }
+
+  .agenda {
+    padding: 10px 0;
+  }
+
+  .agenda h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  label {
+    display: block;
+    padding: 5px;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 5px 0;
+  }
+
+  input[type="checkbox"] {
+    margin-right: 5px;
+  }
+
+  input[type="submit"] {
+    background-color: #2C348C;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin-top: 10px;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #EC242C;
+  }
+
+  .agenda th {
+    background-color: #2C348C;
+    color: #fff;
+  }
+
+  .agenda td {
+    background-color: #eee;
+  }
+
+  .agenda td.selected {
+    background-color: #2C348C;
+    color: #fff;
+  }
+
+  .menu-container {
+    background: #2C348C;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  .menu-container a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+  }
+
+  .menu-container a:hover {
+    text-decoration: underline;
+  }

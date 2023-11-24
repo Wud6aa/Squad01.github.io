@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Agenda Grupo Tiradentes</title>
+  <link rel="stylesheet" href="../css/style-pagina-agendamento.css">
+  <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <div class="calendar">
+
+    <div class="menu-container">
+      <a href="#">Menu Principal</a>
+      <a href="#">Fazer Agendamento</a>
+    </div>
+    <h1 style="text-align: center; margin-top: 50px;">Agendamento</h1>
+    <div class="agenda">
+
+      <label for="">Data<input type="date" name="data" value="2023-08-01"></label>
+      <h2>Horários Disponíveis</h2>
+      <form id="agendamento-form" onsubmit="return agendarHorario()">
+        <label for="horario1">
+          <input type="radio" id="horario1" name="horario" value="1">
+          6:00
+        </label>
+        <label for="horario2">
+          <input type="radio" id="horario2" name="horario" value="2">
+          8:00
+        </label>
+        <label for="horario3">
+          <input type="radio" id="horario3" name="horario" value="3">
+          10:00
+        </label>
+        <input type="submit" value="Agendar">
+      </form>
+    </div>
+  </div>
+
+  <script src="../javascript/pagina-cadastramento.js">
+  </script>
+</body>
+
+</html>

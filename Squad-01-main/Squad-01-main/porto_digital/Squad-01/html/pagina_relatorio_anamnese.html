@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório Anamnese</title>
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../css/style-pagina-relatorio-anamnese.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <header class="heading">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html" style="margin-right: 600px;">
+                    <img src="../img/logo-removebg-preview.png" class="logo" alt="logo tiradentes"></a>
+
+            </div>
+            <div class="menu">
+                <nav class="nav" style="margin-left: -550px; font-size: 20px;">
+                    <a href="#" class="nav-link">Quem somos </a>
+                    <a href="#" class="nav-link">Tratamentos</a>
+                    <a href="#" class="nav-link">Clínicas</a>
+                    <a href="#" class="nav-link">Blog</a>
+                </nav>
+            </div>
+            <div class="imagens" style="margin-right: 100px;">
+                <a href="#" target="_blank" rel="external"> <img src="../img/image-instagram.png" alt="img-instagram"
+                        class="instagram"></a>
+                <a href="https://www.facebook.com/profile.php?id=100063854833671" target="_blank" rel="external"><img
+                        src="../img/image-facebook.png" alt="img-facebook" class="facebook"></a>
+                <a href="#" target="_blank" rel="external"><img src="../img/image-twitter.png" alt="img-twitter"
+                        class="twitter"></a>
+                <a href="https://br.linkedin.com/company/grupo-tiradentes" target="_blank" rel="external"><img
+                        src="../img/image-linkedin.png" alt="img-linkedin" class="linkedin"></a>
+                <a href="#" target="_blank" rel="external"><img src="../img/image-youtube.png" alt="img-youtube"
+                        class="youtube"></a>
+            </div>
+        </div>
+    </header>
+    <section class="area-toral-relatorio-anamnese">
+        <form class="row g-3 needs-validation" novalidate>
+            <div class="col-md-4">
+              <label for="primeiro_nome" class="form-label">Primeiro Nome</label>
+              <input type="text" class="form-control" id="validationCustom01" name="primeiro_nome" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-4">
+              <label for="sobrenome" class="form-label">Sobrenome</label>
+              <input type="text" class="form-control" id="validationCustom02" name="sobrenome" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-4">
+              <label for="validationCustomUsername" class="form-label">Email</label>
+              <div class="input-group has-validation">
+                <span class="input-group-text" id="inputGroupPrepend">@</span>
+                <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                <div class="invalid-feedback">
+                  Please choose a username.
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label for="cidade" class="form-label">Cidade</label>
+              <input type="text" class="form-control" id="validationCustom03" name="cidade" required>
+              <div class="invalid-feedback">
+                Please provide a valid city.
+              </div>
+            </div>
+            <div class="col-md-3">
+              <label for="validationCustom04" class="form-label">Estado</label>
+              <select class="form-select" id="validationCustom04" required>
+                <option value="">Escolha...</option>
+                <option>Sergipe</option>
+                <option>Alagoas</option>
+              </select>
+              <div class="invalid-feedback">
+                Please select a valid state.
+              </div>
+            </div>
+            <div class="col-md-3">
+              <label for="validationCustom05" class="form-label">CEP</label>
+              <input type="text" class="form-control" id="validationCustom05" required>
+              <div class="invalid-feedback">
+                Please provide a valid zip.
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-check d-flex justify-content-center">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                <label class="form-check-label" for="invalidCheck">
+                  Concordo com os <a href="#" >termos de serviço</a>
+                </label>
+                <div class="invalid-feedback">
+                  You must agree before submitting.
+                </div>
+              </div>
+            </div>
+            
+              <div class="d-flex">
+                <label>Está em tratamento médico?</label>
+                <div class="form-check d-flex">
+                    <div class="">
+                      <input class="form-check-input teste" type="radio" name="tratamento" id="flexRadioDefault1">
+                      <label class="form-check-label" for="flexRadioDefault1">
+                        Sim
+                      </label>
+                      </div>
+                        <div class="form-check">
+                        <input class="form-check-input teste" type="radio" name="tratamento" id="flexRadioDefault2" >
+                        <label class="form-check-label" for="flexRadioDefault2">Não</label>
+                    </div>
+              </div>
+                </div>
+                <div class="d-flex">
+                  <label>Está grávida?</label>
+                  <div class="form-check d-flex">
+                    <input class="form-check-input teste" type="radio" name="gravida" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      Sim
+                    </label>
+                  </div>
+                  <div class="form-check d-flex ">
+                    <input class="form-check-input teste" type="radio" name="gravida" id="flexRadioDefault2" >
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      Não
+                    </label>
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <label>Está fazendo algum regime?</label>
+                  <div class="form-check d-flex ">
+                    <input class="form-check-input teste" type="radio" name="regime" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      Sim
+                    </label>
+                  </div>
+                  <div class="form-check d-flex ">
+                    <input class="form-check-input teste" type="radio" name="regime" id="flexRadioDefault2" >
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      Não
+                    </label>
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <label>Possui diabetes?</label>
+                  <div class="form-check d-flex ">
+                    <input class="form-check-input teste" type="radio" name="diabetes" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      Sim
+                    </label>
+                  </div>
+                  <div class="form-check d-flex ">
+                    <input class="form-check-input teste" type="radio" name="diabetes" id="flexRadioDefault2" >
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      Não
+                    </label>
+                  </div>
+                </div>
+                <div>
+                    <div class="d-flex">
+                      <label class="margin">Tem alergias?</label>
+                      <div class="form-check d-flex ">
+                        <input class="form-check-input teste" type="radio" name="alergias" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                          Sim
+                        </label>
+                      </div>
+                      <div class="form-check d-flex ">
+                        <input class="form-check-input teste" type="radio" name="alergias" id="flexRadioDefault2" >
+                        <label class="form-check-label" for="flexRadioDefault2">
+                          Não
+                        </label>
+                      </div>
+                     </div>
+                    </div>
+                <div class="d-flex">
+                  <label>Febre reumática?</label>
+                  <div class="form-check d-flex">
+                    <input class="form-check-input teste" type="radio" name="febre_rematica" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      Sim
+                    </label>
+                  </div>
+                  <div class="form-check d-flex ">
+                    <input class="form-check-input teste" type="radio" name="febre_rematica" id="flexRadioDefault2" >
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      Não
+                    </label>
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <label>Problemas de coagulação?</label>
+                  <div class="form-check d-flex ">
+                    <input class="form-check-input teste" type="radio" name="coagulacao" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      Sim
+                    </label>
+                  </div>
+                  <div class="form-check d-flex ">
+                    <input class="form-check-input teste" type="radio" name="coagulacao" id="flexRadioDefault2" >
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      Não
+                    </label>
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <label>Doença cárdio vascular?</label>
+                  <div class="form-check d-flex ">
+                    <input class="form-check-input teste" type="radio" name="cardiovascular" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      Sim
+                    </label>
+                  </div>
+                  <div class="form-check d-flex ">
+                    <input class="form-check-input teste" type="radio" name="cardiovascular" id="flexRadioDefault2" >
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      Não
+                    </label>
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <label>Problemas hemorrágicos?</label>
+                  <div class="form-check d-flex ">
+                    <input class="form-check-input teste" type="radio" name="hemorragicos" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      Sim
+                    </label>
+                  </div>
+                  <div class="form-check d-flex ">
+                    <input class="form-check-input teste" type="radio" name="hemorragicos" id="flexRadioDefault2" >
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      Não
+                    </label>
+                  </div>
+                </div>
+                <div class="d-flex">
+                <label>Problemas com anestesia?</label>
+                  <div class="form-check d-flex ">
+                    <input class="form-check-input teste" type="radio" name="anestesia" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      Sim
+                    </label>
+                  </div>
+                  <div class="form-check d-flex ">
+                    <input class="form-check-input teste" type="radio" name="anestesia" id="flexRadioDefault2">
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      Não
+                    </label>
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <label>Alergia a medicamentos?</label>
+                  <div class="form-check d-flex ">
+                    <input class="form-check-input teste" type="radio" name="alergia_medicamentos" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      Sim
+                    </label>
+                  </div>
+                  <div class="form-check d-flex ">
+                    <input class="form-check-input teste" type="radio" name="alergia_medicamentos" id="flexRadioDefault2">
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      Não
+                    </label>
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <label>Teve hepatite?</label>
+                  <div class="form-check d-flex ">
+                    <input class="form-check-input teste" type="radio" name="hepatite" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      Sim
+                    </label>
+                  </div>
+                  <div class="form-check d-flex ">
+                    <input class="form-check-input teste" type="radio" name="hepatite" id="flexRadioDefault2">
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      Não
+                    </label>
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <label>É portador do vírus HIV?</label>
+                  <div class="form-check d-flex">
+                    <input class="form-check-input teste" type="radio" name="virus_hiv" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      Sim
+                    </label>
+                  </div>
+                  <div class="form-check d-flex ">
+                    <input class="form-check-input teste" type="radio" name="virus_hiv" id="flexRadioDefault2">
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      Não
+                    </label>
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <label>Usa ou já usou drogas?</label>
+                  <div class="form-check d-flex">
+                    <input class="form-check-input teste" type="radio" name="drogas" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      Sim
+                    </label>
+                  </div>
+                  <div class="form-check d-flex ">
+                    <input class="form-check-input teste" type="radio" name="drogas" id="flexRadioDefault2">
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      Não
+                    </label>
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <label>Pressão arterial:</label>
+                  <div class="form-check d-flex ">
+                    <input class="form-check-input teste" type="radio" name="pressao_arterial" id="flexRadioDefault1">
+                    <label class="form-check-label" for="pressao_arterial_normal">
+                      Normal
+                    </label>
+                  </div>
+                  <div class="form-check d-flex ">
+                    <input class="form-check-input teste" type="radio" name="pressao_arterial" id="flexRadioDefault2">
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      Alta
+                    </label>
+                  </div>
+                  <div class="form-check d-flex ">
+                    <input class="form-check-input teste" type="radio" name="pressao_arterial" id="flexRadioDefault2">
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      Baixa
+                    </label>
+                  </div>
+                </div>
+              
+                <div class="d-flex">
+                <label>Problemas respiratórios?</label>
+                <div class="form-check d-flex ml-5">
+                    <input class="form-check-input teste" type="radio" name="respiratorio" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      Sim
+                    </label>
+                    </div>
+                    <div class="form-check d-flex ">
+                    <input class="form-check-input teste" type="radio" name="respiratorio" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      Não
+                    </label>
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <label for="doenca_familiar">Doença na família?</label>
+                  <div class="input-group w-25">
+                  <label class="input-group-text " for="inputGroupSelect01"></label>
+                  <select class="form-select w-50" id="inputGroupSelect01 ">
+                    <option >Escolha</option>
+                    <option value="doenca">Doença 1</option>
+                    <option value="doenca">Doença 2</option>
+                    <option value="doenca">Doença 3</option>
+                  </select>
+                </div>
+              </div>
+            
+            <div class="col-12">
+              <button class="btn btn-primary" type="submit">Confirmar agendamento!</button>
+            </div>
+          </form>
+
+    <footer class="rodape">
+        <h2>Fale Conosco:</h2>
+        <div class="area-contato">
+            <img src="../img/image-telefone.png" alt="img-telefone">
+            <h3>0800 729 2100</h3>
+        </div>
+    </footer>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="../javascript/pag_relatorio.js"></script>
+
+</body>
+
+</html>

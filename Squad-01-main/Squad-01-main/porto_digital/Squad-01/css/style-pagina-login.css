@@ -1,0 +1,64 @@
+body {
+    background-image: url("../img/FUNDO.png");
+}
+
+.area-total-logo {
+    text-align: center;
+    margin-top: 230px;
+}
+
+form {
+    text-align: center;
+}
+
+input {
+    border-radius: 51px;
+    border: 0px none;
+    width: 25%;
+    height: 35px;
+    text-align: center;
+}
+
+input::placeholder {
+    text-align: center;
+}
+
+.botao input:hover{
+    color: #EBE815 !important;
+    border: 2px solid #EBE815 !important;
+}
+
+.esqueceu_a_senha {
+    color: #EBE815;
+}
+
+a {
+    color: #EBE815;
+}
+
+button {
+    border-radius: 51px;
+    border: 0px none;
+    width: 9%;
+    height: 35px;
+    background: #EA222F;
+    color: white;
+    padding: auto;
+    margin: 5px;
+}
+
+button:hover{
+    color: #EBE815;
+    border: 2px solid #EBE815 !important;
+}
+
+input[type="submit"] {
+    border-radius: 51px;
+    border: 0px none;
+    width: 9%;
+    height: 35px;
+    background: #EA222F;
+    color: white;
+    padding: auto;
+    margin: 5px;
+}
